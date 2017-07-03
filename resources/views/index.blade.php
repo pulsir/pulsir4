@@ -12,13 +12,13 @@
     <title>Pulsir</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="{{ asset('css/landing-page.css') }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,22 +43,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img style="margin-top: -9px;" width="40px" height="40px" src="img/logo.png" alt="Pulsir">
+                <a class="navbar-brand" href="/"><img style="margin-top: -9px;" width="40px" height="40px" src="{{ asset('img/logo.png') }}" alt="Pulsir">
           </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                      <li class="dropdown">
-				        <a class="dropdown-toggle" data-toggle="dropdown" href="/login"><b>Login</b>
-				        <span class="caret"></span></a>
-				        <ul class="dropdown-menu">
-				          <li><a href="#">Sign Up</a></li>
-				          <li><a href="#">New Posts</a></li>
-				          <li><a href="#">Support</a></li>
-				          <li><a href="#">Legal</a></li>
-				        </ul>
-				      </li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/login"><b>Login</b>
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Sign Up</a></li>
+                          <li><a href="#">New Posts</a></li>
+                          <li><a href="#">Support</a></li>
+                          <li><a href="#">Legal</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -81,7 +81,7 @@
                             <li>
                                 <a href="#learnmore" class="btn btn-default btn-lg"><span class="network-name">Learn More</span></a>
                             </li>
-							<li>
+                            <li>
                                 <a href="#" class="btn btn-default btn-lg"><span class="network-name">Sign up and start posting</span></a>
                             </li>
                         </ul>
@@ -97,7 +97,7 @@
 
     <!-- Page Content -->
 
-	<a  name="learnmore"></a>
+    <a  name="learnmore"></a>
     <div class="content-section-a">
 
         <div class="container">
@@ -106,14 +106,14 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">For storytellers</h2>
-                   	<ul>
-                   		<li><p>Focus on <b>writing</b>, not messing around with complicated settings.</p></li>
-                   		<li><p>Your content always remains yours, no asterisks. Plus, we truly care about your privacy.</p></li>
-                   		<li><p>All the maintenance, hosting and uptime is up to us. Sleep worry-free.</p></li>
-                   	</ul>
+                    <ul>
+                        <li><p>Focus on <b>writing</b>, not messing around with complicated settings.</p></li>
+                        <li><p>Your content always remains yours, no asterisks. Plus, we truly care about your privacy.</p></li>
+                        <li><p>All the maintenance, hosting and uptime is up to us. Sleep worry-free.</p></li>
+                    </ul>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/first.jpg" alt="">
+                    <img class="img-responsive" src="{{ asset('img/first.jpg') }}" alt="">
                 </div>
             </div>
 
@@ -132,14 +132,14 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Made for developers by developers</h2>
-                   	<ul>
-                   		<li><p>A simple API - Get a JSON output of everything we've got using simple requests.</p></li>
-                   		<li><p>Open Source - Want to contribute? Hate how something works? Want to add something new? The complete code is up on GitHub.</p></li>
-                   		<li><p>If you're having trouble, our knowledgable support team will respond quickly and accurately.</p></li>
-                   	</ul>
+                    <ul>
+                        <li><p>A simple API - Get a JSON output of everything we've got using simple requests.</p></li>
+                        <li><p>Open Source - Want to contribute? Hate how something works? Want to add something new? The complete code is up on GitHub.</p></li>
+                        <li><p>If you're having trouble, our knowledgable support team will respond quickly and accurately.</p></li>
+                    </ul>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/second.jpg" alt="">
+                    <img class="img-responsive" src="{{ asset('img/second.jpg') }}" alt="">
                 </div>
             </div>
 
@@ -159,13 +159,13 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">For everybody</h2>
                     <ul>
-	                    <li><p>Pulsir is free and will always remain free, and you can always look at the source.</p></li>
-	                    <li><p>We strive to make Pulsir simple to use, yet beautiful to look at.</p></li>
-	                    <li><p>We've got a great support team standing by in case you need any help.</p></li>
-	                 </ul>
+                        <li><p>Pulsir is free and will always remain free, and you can always look at the source.</p></li>
+                        <li><p>We strive to make Pulsir simple to use, yet beautiful to look at.</p></li>
+                        <li><p>We've got a great support team standing by in case you need any help.</p></li>
+                     </ul>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/third.jpg" alt="">
+                    <img class="img-responsive" src="{{ asset('img/third.jpg') }}" alt="">
                 </div>
             </div>
 
@@ -175,7 +175,7 @@
     </div>
     <!-- /.content-section-a -->
 
-	<a  name="contact"></a>
+    <a  name="contact"></a>
     <div class="banner">
 
         <div class="container">
@@ -230,10 +230,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 </body>
 
