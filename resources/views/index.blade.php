@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pulsir</title>
+    <title>Blogging, reinvented. &middot; Pulsir</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -53,8 +53,8 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="/login"><b>Login</b>
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="/register">Sign Up</a></li>
-                          <li><a href="/posts">New Posts</a></li>
+                          <li><a href="/register">Sign up</a></li>
+                          <li><a href="/posts">New posts</a></li>
                           <li><a href="/support">Support</a></li>
                           <li><a href="/legal">Legal</a></li>
                         </ul>
@@ -74,12 +74,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>Pulsir 4</h1>
-                        <h3>Tell your story to the world. Now it's simpler, faster and free.</h3>
+                        <h1>Stories are worth telling.</h1>
+                        <h3>Tell yours to the world. Pulsir is a beautifully simple, fast and free way to write.</h3>
                         <hr class="intro-divider">
                          <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="#learnmore" class="btn btn-default btn-lg"><span class="network-name">Learn More</span></a>
+                                <a href="#learnmore" class="btn btn-default btn-lg"><span class="network-name">Learn more</span></a>
                             </li>
                             <li>
                                 <a href="#" class="btn btn-default btn-lg"><span class="network-name">Sign up and start posting</span></a>
@@ -105,11 +105,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">For storytellers</h2>
+                    <h2 class="section-heading">Made for storytellers</h2>
                     <ul>
-                        <li><p>Focus on <b>writing</b>, not messing around with complicated settings.</p></li>
+                        <li><p>Focus on <b>writing</b>. Pulsir is easy to use wherever you are.</p></li>
                         <li><p>Your content always remains yours, no asterisks. Plus, we truly care about your privacy.</p></li>
-                        <li><p>All the maintenance, hosting and uptime is up to us. Sleep worry-free.</p></li>
+                        <li><p>We make sure your content looks great, wherever it's being read.</p></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -131,11 +131,11 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Made for developers by developers</h2>
+                    <h2 class="section-heading">Made for developers, by developers</h2>
                     <ul>
-                        <li><p>A simple API - Get a JSON output of everything we've got using simple requests.</p></li>
-                        <li><p>Open Source - Want to contribute? Hate how something works? Want to add something new? The complete code is up on GitHub.</p></li>
-                        <li><p>If you're having trouble, our knowledgable support team will respond quickly and accurately.</p></li>
+                        <li><p>Want to write apps that integrate with Pulsir? Get a JSON output of everything we've got using our exquisite API.</p></li>
+                        <li><p>Missing a feature on Pulsir? Our complete code is up on GitHub, fully open-source.</p></li>
+                        <li><p>Having trouble? Our knowledgable support team will respond quickly and accurately.</p></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -157,11 +157,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">For everybody</h2>
+                    <h2 class="section-heading">Made for everybody</h2>
                     <ul>
-                        <li><p>Pulsir is free and will always remain free, and you can always look at the source.</p></li>
-                        <li><p>We strive to make Pulsir simple to use, yet beautiful to look at.</p></li>
-                        <li><p>We've got a great support team standing by in case you need any help.</p></li>
+                        <li><p>Pulsir is free and will always remain free.</p></li>
+                        <li><p>We're deeply passionate about user privacy.</p></li>
+                        <li><p>Whatever happens, your content stays yours.</p></li>
                      </ul>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -193,7 +193,7 @@
                             <a href="https://github.com/pulsir" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/company/pulsir" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="https://www.linkedin.com/company/pulsir" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
                         </li>
                     </ul>
                 </div>
@@ -216,14 +216,14 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#learnmore">Learn More</a>
+                            <a href="#learnmore">Learn more</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Pulsir 2011. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Platform copyright &copy; Pulsir 2017. Pulsir is made possible by a small group of great volunteers and released under <a href="/legal/license">the :) license</a>.</p>
                 </div>
             </div>
         </div>
