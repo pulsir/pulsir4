@@ -53,10 +53,10 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="/login"><b>Login</b>
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="#">Sign Up</a></li>
-                          <li><a href="#">New Posts</a></li>
-                          <li><a href="#">Support</a></li>
-                          <li><a href="#">Legal</a></li>
+                          <li><a href="/register">Sign Up</a></li>
+                          <li><a href="/posts">New Posts</a></li>
+                          <li><a href="/support">Support</a></li>
+                          <li><a href="/legal">Legal</a></li>
                         </ul>
                       </li>
                 </ul>

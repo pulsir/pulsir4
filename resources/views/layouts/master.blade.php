@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Fresh from the bakery — Pulsir</title>
+    <title>Pulsir - New posts</title>
     <meta description="Recently added posts">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pulsir.eu/template/whitey/css/generate.php">
@@ -28,13 +28,13 @@
               <i class="fa fa-caret-down"></i>
             </a>
             <ul class="dropdown-menu pull-right">
-              <li><a href="new.php">New posts</a></li>
-              <li><a href="signup.php">Sign up</a></li>
-              <li><a href="login.php">Log in</a></li>
-              <li><a href="http://support.pulsir.eu">Support</a></li>
-              <li><a href="http://legal.pulsir.eu">Legal</a></li>
+              <li><a href="/posts">New posts</a></li>
+              <li><a href="/register">Sign up</a></li>
+              <li><a href="/login">Log in</a></li>
+              <li><a href="/support">Support</a></li>
+              <li><a href="/legal">Legal</a></li>
             </ul>
-             <a class="btn btn-warning pull-right" href="//pulsir.eu/login.php">
+             <a class="btn btn-warning pull-right" href="/login">
               Log in
             </a>
           </div>
