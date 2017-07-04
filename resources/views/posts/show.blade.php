@@ -9,7 +9,8 @@
 </span></hr><div class="post-body">
 <p>{{ $post->body }}</p></div><hr> 
 <div class="replies">
-<h4>Post replies</h4><p><a href="/posts/{{ $post->id }}/reply"><i class="fa fa-reply"></i> Add your thoughts</a><br><sub>or tag your post with intemperies to reply.</sub></br></div>
+	<h4>Post replies</h4><p>
+</div>
 @if(count($post->comments)) 
 	@foreach($post->comments as $comment)
 	<ul class="list-group">
@@ -20,7 +21,7 @@
 	</ul>
 	@endforeach
 @else
-	<strong>No replies yet.</strong></div>
+	<strong>No replies yet.</strong></div><br>
 @endif
 
 	<div class="card">

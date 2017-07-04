@@ -20,6 +20,10 @@
 				<input type="password" name="password" id="password" placeholder="Anything you want."  class="form-control" required />
 			</div>
 			<div class="form-group">
+				<label for="password_confirmation">Confirm password.</label>
+				<input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirm your password."  class="form-control" required />
+			</div>
+			<div class="form-group">
 				<label for="email">Email adress.</label>
 				<input type="email" name="email" id="email" placeholder="Important things only. Used for Gravatar." class="form-control" required />
 			</div>
