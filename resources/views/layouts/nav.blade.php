@@ -8,7 +8,7 @@
             </a>
             <ul class="dropdown-menu pull-right">
               <li><a href="/posts">New posts</a></li>
-              <li><a href="/profile">My profile</a></li>
+              <li><a href="/{{ Auth::user()->username }}">My profile</a></li>
               <li><a href="/logout">Log out</a></li>
               <li><a href="/settings">Settings</a></li>
               <hr>

@@ -34,3 +34,10 @@ Route::post('/login', 'SessionsController@store');
 
 
 Route::get('/logout', 'SessionsController@destroy');
+
+
+
+
+
+// This must be placed here, after all the routes are covered
+Route::get('/{username}', 'UsersController@show');
