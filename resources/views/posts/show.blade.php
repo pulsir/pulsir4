@@ -5,7 +5,7 @@
 <div class="eleven columns">
 <div class="post">
 <div class="metadata">
-<h1 class="title"><b><a href="p.php?id=520">{{ $post->title }}</a></b></h1><br><span class="post-author"><img src="http://www.gravatar.com/avatar/ab8d45c8ab431e25789721a5cf6618cb?r=pg&d=identicon&s=64" style="height:24px;" class="user-pic-post" /> <a href="/bfw12345">intemperies</a> 
+<h1 class="title"><b><a href="p.php?id=520">{{ $post->title }}</a></b></h1><br><span class="post-author"><img src="http://www.gravatar.com/avatar/ab8d45c8ab431e25789721a5cf6618cb?r=pg&d=identicon&s=64" style="height:24px;" class="user-pic-post" /> <a href="/{{ $post->user->username }}">{{ $post->user->username }}</a> 
 </span></hr><div class="post-body">
 <p>{{ $post->body }}</p></div><hr> 
 <div class="replies">
@@ -15,7 +15,7 @@
 	@foreach($post->comments as $comment)
 	<ul class="list-group">
 		<li class="list-group-item">
-			<strong>{{ $comment->created_at->diffForHumans() }}: &nbsp;</strong>
+			<strong>{{ $comment->user->username }} {{ $comment->created_at->diffForHumans() }}: &nbsp;</strong>
 			{{ $comment->body }}
 		</li>
 	</ul>
@@ -23,7 +23,7 @@
 @else
 	<strong>No replies yet.</strong></div><br>
 @endif
-
+@if (Auth::check())
 	<div class="card">
 		<div class="card-block">
 			<form method="POST" action="/posts/{{ $post->id }}/comment">
@@ -38,7 +38,7 @@
 			</form>
 		</div>
 	</div>
-
+@endif
 	@include('layouts.errors')
 </div>
 @endsection
