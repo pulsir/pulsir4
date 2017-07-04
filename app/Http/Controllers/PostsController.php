@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostsController extends Controller
 {
@@ -23,12 +24,16 @@ class PostsController extends Controller
 
     public function store() 
     {
-    	$post = new \App\Post;
-    	$post->title = request('title');
-    	$post->body = request('body');
+        $this->validate(request(), [
+            'title' => 'required',
+            'body' => 'required'
+            ]);
+    	$post = new Post;
+    	Post::create([
+                'title' => request('title'),
+                'body' => request('body')
+            ]);
 
-
-    	$post->save();
     	return redirect('/posts/'.$post->id);
     }
 }
