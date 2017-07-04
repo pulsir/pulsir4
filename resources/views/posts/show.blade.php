@@ -9,7 +9,35 @@
 </span></hr><div class="post-body">
 <p>{{ $post->body }}</p></div><hr> 
 <div class="replies">
-<h4>Post replies</h4><p><a href="/posts/1/reply"><i class="fa fa-reply"></i> Add your thoughts</a><br><sub>or tag your post with intemperies to reply.</sub></br></div>
-<strong>No replies yet.</strong></div>
+<h4>Post replies</h4><p><a href="/posts/{{ $post->id }}/reply"><i class="fa fa-reply"></i> Add your thoughts</a><br><sub>or tag your post with intemperies to reply.</sub></br></div>
+@if(count($post->comments)) 
+	@foreach($post->comments as $comment)
+	<ul class="list-group">
+		<li class="list-group-item">
+			<strong>{{ $comment->created_at->diffForHumans() }}: &nbsp;</strong>
+			{{ $comment->body }}
+		</li>
+	</ul>
+	@endforeach
+@else
+	<strong>No replies yet.</strong></div>
+@endif
+
+	<div class="card">
+		<div class="card-block">
+			<form method="POST" action="/posts/{{ $post->id }}/comment">
+					{{ csrf_field() }}
+					<div class="form-group">
+					<textarea name="body" placeholder="Your comment here." class="form-control"></textarea>
+					<br>
+					<div class="form-group">
+						<input type="submit" id="submit" class="btn btn-primary" value="Add Comment">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	@include('layouts.errors')
 </div>
 @endsection
