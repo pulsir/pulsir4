@@ -9,7 +9,7 @@ class PostsController extends Controller
 {
     public function index() 
     {
-        $posts = Post::orderBy('updated_at','desc')->limit(14)->get();
+        $posts = Post::orderBy('created_at','desc')->limit(14)->get();
     	return view('posts.index', compact('posts'));
     }
 
