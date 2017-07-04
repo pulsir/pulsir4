@@ -1,5 +1,5 @@
 <div class="page-header dropdown">
-            <a href="//pulsir.eu/index.php">
+            <a href="/">
               <img src="https://d.pulsir.eu/assets/midres-final2-logo.png" width="36" height="34" class="pulsirlogo">
             </a>
             <a class="pull-right btn btn-primary" data-toggle="dropdown">

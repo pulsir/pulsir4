@@ -9,13 +9,14 @@ class PostsController extends Controller
 {
     public function index() 
     {
-        $posts = Post::orderBy('id')->take(14)->get();
+        $posts = Post::orderBy('updated_at','desc')->limit(14)->get();
     	return view('posts.index', compact('posts'));
     }
 
-    public function show() 
+    public function show($id) 
     {
-    	return view('posts.show');
+        $post = Post::find($id);
+    	return view('posts.show', compact('post'));
     }
 
     public function create() 
