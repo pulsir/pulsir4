@@ -1,7 +1,7 @@
 @extends('layouts.master')
   @section('content')
           <h2 class="text-center">Settings</h2>
-          <form class="form-horizontal" role="form" action="/settings" method="post">
+          <form class="form-horizontal" role="form" action="/settings" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
            <input type="hidden" name="settings" value="true" />
             <div class="form-group">
@@ -25,23 +25,14 @@
             <div class="form-group">
               <label for="inputAvatar1" class="col-lg-2 control-label">Avatar</label>
               <div class="col-lg-10">
-                <a href="http://gravatar.com">
-                  <img class="img-thumbnail" src="{{ asset('img/'.Auth::user()->image) }}" height="64" width="64" alt="Photo" id="inputAvatar1">
-                </a>
-                 <p>Change at <a href="http://gravatar.com">Gravatar.com</a>. <b><a href="http://go.pulsir.eu/grwhy">Why?</a></b></p>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputDomain1" class="col-lg-2 control-label">Custom domain</label>
-              <div class="col-lg-10">
-               To set a custom domain, contact our <a href="mailto:say.hello@pulsir.eu">friendly support team</a>.
-
+                  <img class="img-thumbnail" src="{{ asset('storage/'.Auth::user()->image) }}" height="64" width="64" alt="Photo" id="inputAvatar1">
+                 <input type="file" name="pic" accept="image/*" class="form-control">
               </div>
             </div>
             <div class="form-group">
               <label for="inputCSS1" class="col-lg-2 control-label">Custom CSS</label>
               <div class="col-lg-10">
-                <textarea class="form-control" name="cucss" id="inputCSS1" placeholder="Insert your custom CSS">{{ Auth::user()->customcss }}</textarea>
+                <textarea class="form-control" name="cucss" id="inputCSS1" placeholder="Insert your custom CSS" value="{{ Auth::user()->customcss }}"></textarea>
               </div>
             </div>
             <div class="form-group">

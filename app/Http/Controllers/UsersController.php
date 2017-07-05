@@ -30,7 +30,13 @@ class UsersController extends Controller
     public function update() 
     {
         $user = User::find(auth()->user()->id);
-        if (!is_null(request()->password)) {
+        if (isset(request()->pic)) {
+            $path = request()->file('pic')->store('public');
+            $user->image = request()->pic->hashName();
+            $user->save();
+    }
+
+            if (!is_null(request()->password)) {
             $this->validate(request(), [
                 'password' => 'min:6'
                 ]);
@@ -50,6 +56,9 @@ class UsersController extends Controller
             $user->customcss = request()->cucss;
             $user->save();
         }
+
+        
         return back();
+
     }
 }
