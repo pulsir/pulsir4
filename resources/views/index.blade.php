@@ -179,7 +179,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Connect to Pulsir:</h2>
+                    <h2>Let's get social.</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
