@@ -38,7 +38,7 @@ class UsersController extends Controller
 
             if (!is_null(request()->password)) {
             $this->validate(request(), [
-                'password' => 'min:6'
+                'password' => 'min:8'
                 ]);
             $user->password = bcrypt(request()->password);
             $user->save();
