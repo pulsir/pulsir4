@@ -1,5 +1,8 @@
 @extends('layouts.master')
 
+<style>
+
+</style>
 
 @section('content')
 <p class="text-center h3"><img src="{{ asset('img/'.$user->image) }}" width="64" height="64" alt="Photo">  {{ $user->username }} 

@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->boolean('verified')->default(false);
             $table->boolean('developer')->default(false);
             $table->string('image')->default('default.png');
+            $table->text('customcss')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

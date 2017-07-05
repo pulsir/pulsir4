@@ -13,7 +13,11 @@
     <meta name="google-site-verification" content="6ERT0DsecI_-Bqg5KmKxgRgsexypl_umxuqVcRn2fxU" />
     <meta name="theme-color" content="#247f77">
     <link href="https://pulsir.eu/template/whitey/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    
+    @if(Auth::check())
+      <style>
+        {{ Auth::user()->customcss }}
+      </style>
+    @endif
   </head>
   <body>
 <div class="landing">

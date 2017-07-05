@@ -26,7 +26,7 @@ class RegistrationController extends Controller
     	$this->validate(request(), [
     			'username' => 'required|unique:users,username',
     			'email' => 'required|email|unique:users,email',
-    			'password' => 'required|confirmed'
+    			'password' => 'required|confirmed|min:6'
     		]);
 
     	// Save the user 

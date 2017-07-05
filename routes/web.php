@@ -36,8 +36,8 @@ Route::post('/login', 'SessionsController@store');
 Route::get('/logout', 'SessionsController@destroy');
 
 
-
-
+Route::get('/settings', 'UsersController@settings');
+Route::post('/settings', 'UsersController@update');
 
 // This must be placed here, after all the routes are covered
 Route::get('/{username}', 'UsersController@show');
