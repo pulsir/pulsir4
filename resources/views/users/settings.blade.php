@@ -32,7 +32,7 @@
             <div class="form-group">
               <label for="inputCSS1" class="col-lg-2 control-label">Custom CSS</label>
               <div class="col-lg-10">
-                <textarea class="form-control" name="cucss" id="inputCSS1" placeholder="Insert your custom CSS" value="{{ Auth::user()->customcss }}"></textarea>
+                <textarea class="form-control" name="cucss" id="inputCSS1" placeholder="Insert your custom CSS">{{ Auth::user()->customcss }} </textarea>
               </div>
             </div>
             <div class="form-group">
