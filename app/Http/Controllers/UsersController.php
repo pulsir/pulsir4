@@ -34,7 +34,7 @@ class UsersController extends Controller
             $path = request()->file('pic')->store('public');
             $user->image = request()->pic->hashName();
             $user->save();
-    }
+        }
 
             if (!is_null(request()->password)) {
             $this->validate(request(), [

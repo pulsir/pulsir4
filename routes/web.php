@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->middleware('guest');
 
 
 Route::get('/posts', 'PostsController@index');
