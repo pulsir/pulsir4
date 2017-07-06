@@ -9,7 +9,7 @@ class WidgetsController extends Controller
 {
     public function __construct() 
     {
-        $this->middleware('admin');
+        $this->middleware('admin')->except('show');
     }
 
     public function index() 
@@ -69,6 +69,6 @@ class WidgetsController extends Controller
     public function destroy(Widget $widget)
     {
         $widget->destroy($widget->id);
-        return back();
+        return redirect('/widgets');
     }
 }
