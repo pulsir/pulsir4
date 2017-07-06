@@ -16,7 +16,7 @@
 	<ul class="list-group">
 		<li class="list-group-item">
 			<img width="32px" height="32px" src="{{ asset('storage/'.$comment->user->image) }}"></img>&nbsp;
-			<strong>{{ $comment->user->username }} replied {{ $comment->created_at->diffForHumans() }}: </strong>
+			<strong><a href="/{{ $comment->user->username }}">{{ $comment->user->username }}</a> replied {{ $comment->created_at->diffForHumans() }}: </strong>
 			{{ $comment->body }}
 		</li>
 	</ul>
