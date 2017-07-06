@@ -27,12 +27,16 @@ Route::post('/posts/{post}/comment', 'CommentsController@store');
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
-
+Route::get('/widgets', 'WidgetsController@index');
+Route::get('/widgets/create', 'WidgetsController@create');
+Route::post('/widgets/create', 'WidgetsController@store');
+Route::get('/widgets/{widget}', 'WidgetsController@show');
+Route::get('/widgets/{widget}/edit', 'WidgetsController@editview');
+Route::get('/widgets/{widget}/delete', 'WidgetsController@destroy');
+Route::post('/widgets/{widget}/edit', 'WidgetsController@edit');
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionsController@create']);
 Route::post('/login', 'SessionsController@store');
-
-
 Route::get('/logout', 'SessionsController@destroy');
 
 

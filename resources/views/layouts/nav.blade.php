@@ -12,6 +12,10 @@
               <li><a href="/logout">Log out</a></li>
               <li><a href="/settings">Settings</a></li>
               <hr>
+              @if(Auth::user()->developer)
+              <li><a href="/widgets">Widgets</a></li>
+              <hr>
+              @endif
               <li><a href="http://support.pulsir.eu">Support</a></li>
               <li><a href="http://legal.pulsir.eu">Legal</a></li>
             </ul>

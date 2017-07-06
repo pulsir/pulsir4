@@ -46,4 +46,14 @@ class User extends Authenticatable
     {
         $this->comments()->save($comment);
     }
+
+    public function widgets()
+    {
+        return $this->hasMany(Widget::class);
+    }
+
+    public function addWidget(Widget $widget)
+    {
+        $this->widgets()->save($widget);
+    }
 }

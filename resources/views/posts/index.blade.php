@@ -13,9 +13,9 @@
       @endforeach
 </div>
     <div class="col-sm-3">
-      @for($i = 0; $i<3; $i++)
-        @include('layouts/widget')
-      @endfor
+      @foreach($widgets as $widget)
+        @include('layouts.widget')
+      @endforeach
     </div>
   </div>
 </div>

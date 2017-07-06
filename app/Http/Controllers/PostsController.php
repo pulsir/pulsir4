@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Widget;
 
 class PostsController extends Controller
 {
@@ -14,8 +15,9 @@ class PostsController extends Controller
 
     public function index() 
     {
+        $widgets = Widget::orderBy('updated_at', 'desc')->limit(14)->get();
         $posts = Post::orderBy('created_at','desc')->limit(14)->get();
-    	return view('posts.index', compact('posts'));
+    	return view('posts.index', compact('posts', 'widgets'));
     }
 
     public function show(Post $post) 
