@@ -37,7 +37,7 @@ class PostsController extends Controller
             ]);
     	$post = new Post;
     	
-        auth()->user()->publish(new Post(request(['title', 'body'])));
+        auth()->user()->publish(new Post(request(['title', 'body', 'topic'])));
 
     	return redirect('/posts/'.$post->id);
     }

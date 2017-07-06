@@ -39,5 +39,10 @@ Route::get('/logout', 'SessionsController@destroy');
 Route::get('/settings', 'UsersController@settings');
 Route::post('/settings', 'UsersController@update');
 
+
+Route::get('/topic', 'TopicsController@index');
+Route::post('/topic', 'TopicsController@redirect');
+Route::get('/topic/{topic}', 'TopicsController@show');
+
 // This must be placed here, after all the routes are covered
 Route::get('/{username}', 'UsersController@show');

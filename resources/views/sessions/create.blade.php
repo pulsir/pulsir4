@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
-@section('title')
-  Sign in
-@endsection
+@section('title', 'Sign in')
 
 @section('content')
   <style>

@@ -1,9 +1,8 @@
 
 @extends('layouts/master')
 
-@section('title')
-  New posts
-@endsection
+@section('title', 'New posts')
+
 
 @section('content')
 
