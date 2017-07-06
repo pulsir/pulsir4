@@ -1,6 +1,10 @@
 
 @extends('layouts/master')
 
+@section('title')
+  New posts
+@endsection
+
 @section('content')
 
   <div class="col-sm-9">   

@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pulsir - New posts</title>
+    <title>@yield('title')</title>
     <meta description="Recently added posts">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://pulsir.eu/template/whitey/css/generate.php">

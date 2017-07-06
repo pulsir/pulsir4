@@ -1,5 +1,9 @@
 @extends('layouts/master')
 
+@section('title')
+	Create a post
+@endsection
+
 @section('content')
 <form action="/posts" method="post" id="new" role="form" enctype="multipart/form-data">
 	{{ csrf_field() }}

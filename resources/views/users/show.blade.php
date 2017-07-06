@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+	{{ $user->username }}'s profile
+@endsection
+
 <style>
 
 </style>

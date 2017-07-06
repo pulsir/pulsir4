@@ -1,4 +1,8 @@
-  @extends('layouts.master')
+@extends('layouts.master')
+
+@section('title')
+  Sign in
+@endsection
 
 @section('content')
   <style>

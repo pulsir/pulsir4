@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+	{{ $post->title }}
+@endsection
+
 @section('content')
 <div class="row">
 <div class="eleven columns">

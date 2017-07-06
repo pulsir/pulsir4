@@ -1,4 +1,7 @@
 @extends('layouts.master')
+  @section('title')
+    Settings
+  @endsection
   @section('content')
           <h2 class="text-center">Settings</h2>
           <form class="form-horizontal" role="form" action="/settings" method="post" enctype="multipart/form-data">
