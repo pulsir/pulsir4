@@ -43,4 +43,12 @@ class PostsController extends Controller
 
     	return redirect('/posts/'.$post->id);
     }
+
+    public function destroy(Post $post)
+    {
+        if ($post->user->id == auth()->user()->id) {
+            $post->destroy($post->id);
+            return redirect('/'.$post->user->username);
+        }
+    }
 }
