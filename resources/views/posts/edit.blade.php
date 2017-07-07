@@ -31,7 +31,7 @@
 	<div class="form-group">
 	<textarea name="body" id="body-field" rows="40" cols="30" placeholder="Type away..." class="form-control">{{ $post->body }}</textarea><small>Post formatted using <a href="http://go.pulsir.eu/markdown" target="_blank">Markdown</a>.</small>
 	</div>
-	<input type="submit" id="submit" class="btn btn-primary" value="Publish"></div></div>
+	<input type="submit" id="submit" class="btn btn-primary" value="Edit"></div></div>
 			
 </form>
 	@include('layouts.errors')
