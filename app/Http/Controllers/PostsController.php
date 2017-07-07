@@ -51,4 +51,39 @@ class PostsController extends Controller
             return redirect('/'.$post->user->username);
         }
     }
+
+    public function showEdit(Post $post) 
+    {
+        if ($post->user->id == auth()->user()->id) {
+            return view('posts/edit', compact('post'));
+        }
+        else return redirect('/404');
+    }
+
+    public function edit(Post $post) 
+    {
+        if ($post->title != request()->title) {
+            $this->validate(request(), [
+                    'title' => 'required'
+                ]);
+            $post->title = request()->title;
+        }
+
+        if ($post->topic != request()->topic) {
+            $this->validate(request(), [
+                    'topic' => 'required'
+                ]);
+            $post->topic = request()->topic;
+        }
+
+        if ($post->body != request()->body) {
+            $this->validate(request(), [
+                    'body' => 'required'
+                ]);
+            $post->body = request()->body;
+        }
+
+        $post->save();
+        return back();
+    }
 }

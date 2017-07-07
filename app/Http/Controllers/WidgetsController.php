@@ -53,7 +53,6 @@ class WidgetsController extends Controller
                     'title' => 'required'
                 ]);
             $widget->title = request()->title;
-            $widget->save();
         }
 
         if ($widget->body != request()->body) {
@@ -61,8 +60,9 @@ class WidgetsController extends Controller
                     'body' => 'required'
                 ]);
             $widget->body = request()->body;
-            $widget->save();
+            
         }
+        $widget->save();
         return back();
     }
 

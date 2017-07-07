@@ -21,6 +21,8 @@ Route::get('/posts/create', 'PostsController@create');
 Route::get('/posts/{post}', 'PostsController@show');
 Route::post('/posts', 'PostsController@store');
 Route::get('/posts/{post}/delete', 'PostsController@destroy');
+Route::get('/posts/{post}/edit', 'PostsController@showEdit');
+Route::post('/posts/{post}/edit', 'PostsController@edit');
 
 Route::post('/posts/{post}/comment', 'CommentsController@store');
 

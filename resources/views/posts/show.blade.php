@@ -12,6 +12,7 @@
 <h1 class="title"><b><a href="p.php?id=520">{{ $post->title }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
 @if(Auth::user()->id == $post->user->id)
 	<a href="/posts/{{ $post->id }}/delete" class="btn btn-danger">Delete</a>
+	<a href="/posts/{{ $post->id }}/edit" class="btn btn-info">Edit</a>
 @endif
 </b></h1><br><span class="post-author"><img src="{{ asset('storage/'.$post->user->image) }}" style="height:24px;" class="user-pic-post" /> <a href="/{{ $post->user->username }}">{{ $post->user->username }}</a> 
 </span></hr><div class="post-body">
