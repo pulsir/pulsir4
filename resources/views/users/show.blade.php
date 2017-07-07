@@ -20,8 +20,7 @@
 </p>
 
 @if (count($user->posts))
-	@foreach($user->posts as $post)
-
+	@foreach($user->posts->sortByDesc('created_at') as $post)
 		@include('layouts.post')
 
 	@endforeach
