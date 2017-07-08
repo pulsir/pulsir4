@@ -3,8 +3,9 @@
 @section('title', 'Edit a post')
 
 @section('content')
-<form action="/posts/{{ $post->id }}/edit" method="post" id="new" role="form" enctype="multipart/form-data">
+<form action="/posts/{{ $post->id }}" method="post" id="new" role="form" enctype="multipart/form-data">
 	{{ csrf_field() }}
+	{{ method_field('PUT') }}
 	<div class="metadata">
 	<div class="form-group"></div><br><br>
 	<div class="form-group">

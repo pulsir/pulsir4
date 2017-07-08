@@ -52,7 +52,7 @@ class PostsController extends Controller
         }
     }
 
-    public function showEdit(Post $post) 
+    public function edit(Post $post) 
     {
         if ($post->user->id == auth()->user()->id || auth()->user()->developer) {
             return view('posts/edit', compact('post'));
@@ -60,7 +60,7 @@ class PostsController extends Controller
         else return redirect('/404');
     }
 
-    public function edit(Post $post) 
+    public function update(Post $post) 
     {
         if($post->user->id == auth()->user()->id || auth()->user()->developer) {
             if ($post->title != request()->title) {
