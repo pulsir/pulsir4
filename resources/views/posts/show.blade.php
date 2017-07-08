@@ -15,7 +15,7 @@
                 {{ csrf_field() }}
                 {{ method_field('DELETE') }}
                 <button class="btn btn-danger">Delete</button>
-    </form>
+</form>
 <a href="{{ '/posts/'.$post->id.'/edit'}}" class="btn btn-info">Update</a>
 	
 @endif

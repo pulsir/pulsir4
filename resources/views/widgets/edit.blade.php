@@ -3,8 +3,9 @@
 @section('title', 'Edit a widget')
 
 @section('content')
-	<form action="/widgets/{{ $widget->id }}/edit" method="POST">
+	<form action="/widgets/{{ $widget->id }}" method="POST">
 		{{ csrf_field() }}
+		{{ method_field('PUT') }}
 		<div class="col-sm-12">
 			<div class="form-group">
 				<input type="text" name="title" id="title-field" class="form-control" placeholder="Add a title..." class="post-title" value="{{ $widget->title }}" /><br> <span class="post-author">{{ Auth::user()->username }}</span>

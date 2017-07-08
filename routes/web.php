@@ -34,9 +34,9 @@ Route::get('/widgets', 'WidgetsController@index');
 Route::get('/widgets/create', 'WidgetsController@create');
 Route::post('/widgets/create', 'WidgetsController@store');
 Route::get('/widgets/{widget}', 'WidgetsController@show');
-Route::get('/widgets/{widget}/edit', 'WidgetsController@editview');
-Route::delete('/widgets/{widget}/delete', 'WidgetsController@destroy');
-Route::post('/widgets/{widget}/edit', 'WidgetsController@edit');
+Route::get('/widgets/{widget}/edit', 'WidgetsController@edit');
+Route::delete('/widgets/{widget}', 'WidgetsController@destroy');
+Route::put('/widgets/{widget}', 'WidgetsController@update');
 
 Route::get('/login', [ 'as' => 'login', 'uses' => 'SessionsController@create']);
 Route::post('/login', 'SessionsController@store');

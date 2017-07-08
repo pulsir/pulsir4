@@ -41,12 +41,12 @@ class WidgetsController extends Controller
         return view('widgets.show', compact('widget'));
     }
 
-    public function editview(Widget $widget)
+    public function edit(Widget $widget)
     {
         return view('widgets.edit', compact('widget'));
     }
 
-    public function edit(Widget $widget)
+    public function update(Widget $widget)
     {
         if ($widget->title != request()->title) {
             $this->validate(request(), [

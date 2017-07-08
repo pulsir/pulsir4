@@ -24,7 +24,12 @@
 					<td>{{ $widget->created_at->toFormattedDateString() }}</td>
 					<td>{{ $widget->updated_at->toFormattedDateString() }}</td>
 					<td>{{ $widget->user->username }}</td>
-					<td><a class="btn btn-danger" href="/widgets/{{ $widget->id }}/delete">Delete</a></td>
+					<td><form action="{{'/widgets/'.$widget->id}}" method="post">
+			                {{ csrf_field() }}
+			                {{ method_field('DELETE') }}
+			                <button class="btn btn-danger">Delete</button>
+						</form>
+					</td>
 					<td><a class="btn btn-info" href="/widgets/{{ $widget->id }}/edit">Edit</a></td>
 				</tr>
 				@endforeach
