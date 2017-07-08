@@ -10,7 +10,7 @@
 <div class="post">
 <div class="metadata">
 <h1 class="title"><b><a href="p.php?id=520">{{ $post->title }}</a>&nbsp;&nbsp;&nbsp;&nbsp;
-@if(Auth::user()->id == $post->user->id)
+@if(Auth::check() && Auth::user()->id == $post->user->id)
 	<a href="/posts/{{ $post->id }}/delete" class="btn btn-danger">Delete</a>
 	<a href="/posts/{{ $post->id }}/edit" class="btn btn-info">Edit</a>
 @endif
