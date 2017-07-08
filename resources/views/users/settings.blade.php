@@ -6,6 +6,7 @@
           <h2 class="text-center">Settings</h2>
           <form class="form-horizontal" role="form" action="/settings" method="post" enctype="multipart/form-data">
           {{ csrf_field() }}
+          {{ method_field('PUT') }}
            <input type="hidden" name="settings" value="true" />
             <div class="form-group">
               <label for="inputUsername1" class="col-lg-2 control-label">Username</label>
