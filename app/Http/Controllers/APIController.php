@@ -13,9 +13,6 @@ class APIController extends Controller
     	if (!isset($user))
     		return 'User not found';
     	else
-    	{
-    		$data = array('data' => $user, $user->posts);
-    		echo json_encode($data);
-    	}
+    		echo json_encode($user->posts);
     }
 }
