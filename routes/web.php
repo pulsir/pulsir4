@@ -74,5 +74,9 @@ Route::post('/topic', 'TopicsController@redirect');
 Route::get('/topic/{topic}', 'TopicsController@show');
 
 
+// API 
+Route::get('/api/{username}', 'APIController@show');
+
+
 // Route for displaying users
 Route::get('/{username}', 'UsersController@show');
