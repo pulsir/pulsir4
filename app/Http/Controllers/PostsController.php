@@ -38,8 +38,15 @@ class PostsController extends Controller
             'body' => 'required'
             ]);
     	$post = new Post;
-    	
-        auth()->user()->publish(new Post(request(['title', 'body', 'topic'])));
+        if (isset(request()->image)) {
+            $path = request()->file('image')->store('public');
+            $post->image = request()->image->hashName();
+        }
+        $post->title = request()->title;
+        $post->topic = request()->topic;
+        $post->body = request()->body;
+        $post->user_id = auth()->user()->id;
+        $post->save();
 
     	return redirect('/posts/'.$post->id);
     }

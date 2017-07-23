@@ -9,7 +9,7 @@
   <div class="col-sm-9">   
       <p class="text-center lead">New posts</p>
       @foreach($posts as $post)
-        @include('layouts.post')
+        @include('layouts.preview')
       @endforeach
 </div>
     <div class="col-sm-3">

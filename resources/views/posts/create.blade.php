@@ -15,11 +15,8 @@
 	<div class="pull-right">
 	<div id="ao" class="ao" style="display:none;">
 	<br><br><br>
-	<input type="checkbox" name="anon" value="1"> Post anonymously - can't be edited <br><br>
-	<input type="checkbox" name="paste" value="1"> This is a paste <br><br>
-	<input type="checkbox" name="noindex" value="1"> Disallow indexing <br><br>
-	<input type="text" name="featured_img" id="featured_img" class="img" class="form-control" placeholder="Featured image URL"  />
-	<p>Paste a URL to an image that you want to be featured above.</p><br><br>
+	<p>Featured image</p>
+	<input type="file" name="image" accept="image/*" class="form-control"><br><br>
 	<!--
 	or upload a featured image:<br><br>
 	<input type="file" name="ff">
