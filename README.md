@@ -1,5 +1,6 @@
 # pulsir4
 A rewrite of the Pulsir core with goals to increase code maintainability.
+Demo is available at http://4.area51.pulsir.eu/
 
 # Instalation
 ```
