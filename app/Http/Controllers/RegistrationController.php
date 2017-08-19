@@ -37,7 +37,7 @@ class RegistrationController extends Controller
 				]);
 
 
-    	// Sign the user up
+    	// Sign the user in
     	auth()->login($user);
 
     	return redirect('/posts');
